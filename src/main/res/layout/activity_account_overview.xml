@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acctOverView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AccountOverview"
+    tools:layout_editor_absoluteY="73dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Account Overview"
+        app:titleTextColor="@color/colorAccent" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_weight=".100"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/idInput"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_id_number"
+                    android:inputType="number"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/acctNameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/balanceLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/balance"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/balanceTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dollar"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/gainesLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/gaines"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/gainesTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dollar"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/lossesLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/losses"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/lossesTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dollar"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="-30dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="@string/submit_btn"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <Button
+                android:id="@+id/acctViewHomeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="@string/home"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@android:color/background_light"
+                android:textSize="17sp"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="326dp"
+                android:layout_marginStart="50dp" />
+
+            <Button
+                android:id="@+id/manageAcctBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="-40dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="@string/manage"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:layout_editor_absoluteX="221dp"
+                tools:layout_editor_absoluteY="326dp"
+                android:layout_marginStart="225dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">PennyTraderApp</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="risk_per">Risk %</string>
+    <string name="ab_stop">Absolute Stop($):</string>
+    <string name="short_pos">Short Position</string>
+    <string name="long_pos">Long Position</string>
+    <string name="risk_pos_size">Risk / Position size:</string>
+    <string name="number_of_shares">Number of Shares</string>
+    <string name="price_per_share">Price per Share</string>
+    <string name="total_val">Total Acct.Value</string>
+    <string name="loss_thres">Loss Threshold</string>
+    <string name="pos_value">Position Value($):</string>
+    <string name="position">0</string>
+    <string name="cal">CALCULATE</string>
+    <string name="potential_pro">Potential Profit</string>
+    <string name="potential_loss">Potential Loss</string>
+    <string name="risk_reward">Risk / Reward Ratio:</string>
+    <string name="ticker_symbol">Ticker Symbol:</string>
+    <string name="rr_ratio">0:0</string>
+    <string name="avg_true_range">ATR($):</string>
+    <string name="atr">Average True Range:</string>
+    <string name="risk_unit">Risk Unit($):</string>
+    <string name="back_button">BACK</string>
+    <string name="next_button">NEXT</string>
+    <string name="previous_button">Previous</string>
+    <string name="add_acct">Add acct.</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+    <string name="default_name">Name</string>
+    <string name="dollar">0.00</string>
+    <string name="acct_name">Account:</string>
+    <string name="balance">Balance $:</string>
+    <string name="gaines">Gaines $:</string>
+    <string name="losses">Losses $:</string>
+    <string name="name">Name</string>
+    <string name="manage">Manage</string>
+    <string name="home">Home</string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="acct_value">Balance $:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="company">Company</string>
+    <string name="update">Update</string>
+    <string name="enter_id">ID #:</string>
+    <string name="enter_account_id">Enter account ID #</string>
+    <string name="acct_id">Acct. ID #:</string>
+    <string name="enter_id_number">Enter ID #</string>
+    <string name="submit_btn">Submit</string>
+    <string name="entry_price">Entry Price($):</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="risk_unit_per">Risk Unit %:</string>
+    <string name="trade_id">Trade ID #:</string>
+    <string name="position_size">Position Size:</string>
+    <string name="textview">TextView</string>
+    <string name="for_acct">For Acct. :</string>
+    <string name="risk_id">Risk ID #:</string>
+    <string name="_0">0</string>
+
+    <string-array name="MainActivityMenu">
+        <item> >>> </item>
+        <item>Logout</item>
+        <item>Accounts</item>
+        <item>Add Account</item>
+        <item>Edit Account</item>
+        <item>Trades</item>
+    </string-array>
+
+    <string-array name="EditAcctMenu">
+        <item> >>> </item>
+        <item>Logout</item>
+        <item>Home</item>
+        <item>Accounts</item>
+        <item>Add Account</item>
+        <item>Trades</item>
+    </string-array>
+
+    <string-array name="TradesOverviewMenu">
+        <item> >>> </item>
+        <item>Logout</item>
+        <item>Home</item>
+        <item>Accounts</item>
+        <item>Add Account</item>
+        <item>Edit Account</item>
+    </string-array>
+
+    <string-array name="AccountOverviewMenu">
+        <item> >>> </item>
+        <item>Logout</item>
+        <item>Home</item>
+        <item>Add Account</item>
+        <item>Edit Account</item>
+        <item>Trades</item>
+    </string-array>
+
+    <string name="RiskRewardDef">
+        Determines the risk to your capital and
+        potential reward: Ex.What is the potential loss or
+        profit when entering this trade?."</string>
+
+    <string name="ATRDef">
+        Determines the average difference in price over
+        a given amount of time.</string>
+
+    <string name="RiskUnitDef">
+        The percentage of your account value you are
+        willing to risk.</string>
+
+    <string name="AbsoluteStopDef">
+        Establishes your loss limit; how much are
+        willing to lose when taking on this trade.</string>
+
+    <string name="RiskPositionSizeDef">
+        Determines the number of shares to trade.</string>
+
+    <string name="PositionValueDef">
+        Determines the value of your overall trade;
+        Number of shares times its current market price .</string>
+
+    <string name="CompanyTickerDef">
+        The company\'s market symbol.</string>
+
+
+</resources>
